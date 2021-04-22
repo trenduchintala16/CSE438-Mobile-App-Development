@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/mainLayout"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/rocket2"
+        android:layout_width="82dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="286dp"
+        android:rotation="90"
+        android:tag="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rocket" />
+
+    <ImageView
+        android:id="@+id/rocket1"
+        android:layout_width="82dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="66dp"
+        android:layout_marginBottom="61dp"
+        android:rotation="90"
+        android:tag="0"
+        app:layout_constraintBottom_toTopOf="@+id/rocket2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rocket" />
+
+    <ImageView
+        android:id="@+id/rocket4"
+        android:layout_width="82dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="66dp"
+        android:layout_marginLeft="66dp"
+        android:layout_marginBottom="51dp"
+        android:tag="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rocket3"
+        app:srcCompat="@drawable/rocket" />
+
+    <ImageView
+        android:id="@+id/rocket3"
+        android:layout_width="82dp"
+        android:layout_height="159dp"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginBottom="51dp"
+        android:tag="2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/rocket4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/rocket" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
